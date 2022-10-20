@@ -16,13 +16,13 @@ class MainActivity : AppCompatActivity() {
         binding.BGuardar.setOnClickListener{
 
           Log.d(Tag,"el parque es "+ binding+binding.TBNombre.text)
-           if(binding.CBDeporte.isChecked)
-             Log.d(Tag,"Las actividades del parque son:${binding.CBDeporte.text}")
+           //if(binding.CBDeporte.isChecked)
+            // Log.d(Tag,"Las actividades del parque son:${binding.CBDeporte.text}")
                       /*Mostrar por pantalla el spinner*/
-            Log.d(Tag,"La hora de apertura:${binding.spinner.selectedItem} y la hora de cierre es ${binding.spinner2.selectedItem}")
+            //Log.d(Tag,"La hora de apertura:${binding.spinner.selectedItem} y la hora de cierre es ${binding.spinner2.selectedItem}")
 
-          //  val miDialogo=MiDialogFragment();
-            //miDialogo.show(supportFragmentManager,"MiDialogo")
+          val miDialogo=MiDialogFragment();
+            miDialogo.show(supportFragmentManager,"MiDialogo")
 
         }
     }
